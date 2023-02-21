@@ -55,7 +55,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_near_hole|118500000|111500000|e7aad60e-c65b-4855-980e-589f8488e14e|f1e1fdbe-26fc-4808-816a-6d9778e8abdb",
+        "hole_near_hole|173010000|111500000|834291ae-efc3-4994-aadd-3226f586ef4e|f9348ff7-cc40-4a63-a95f-efb205410463",
+        "hole_near_hole|191930000|111500000|a0906d40-1002-4dcc-89db-2a033011caf6|d058c70b-6141-4571-a4b1-f963efc18f46",
+        "hole_near_hole|99500000|111500000|d7d40d31-f805-4faf-8db5-16979c05ed9b|2502175a-6e27-40ed-a562-2ef9ad34bfeb"
+      ],
       "meta": {
         "version": 2
       },

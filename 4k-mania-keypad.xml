@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\jaele\Desktop\4k-mania-keypad\4k-mania-keypad.kicad_sch</source>
-    <date>2/23/2023 7:28:08 PM</date>
-    <tool>Eeschema (7.0.0)</tool>
+    <source>/Users/entropy/Documents/coding/old/4k-mania-keypad/4k-mania-keypad.kicad_sch</source>
+    <date>Saturday, December 23, 2023 at 08:52:20 PM</date>
+    <tool>Eeschema 7.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -485,7 +485,7 @@
     </comp>
     <comp ref="R4">
       <value>1k</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
         <field name="Vendor">C11702</field>
       </fields>
@@ -1012,31 +1012,31 @@
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
     </library>
     <library logical="Memory_Flash">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Memory_Flash.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Memory_Flash.kicad_sym</uri>
     </library>
     <library logical="RP2040">
-      <uri>C:\Users\jaele\Desktop\4k-mania-keypad/Kicad-RP2040-lib/Symbol/RP2040.kicad_sym</uri>
+      <uri>/Users/entropy/Documents/coding/old/4k-mania-keypad/Kicad-RP2040-lib/Symbol/RP2040.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Regulator_Linear.kicad_sym</uri>
     </library>
     <library logical="Switch">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Switch.kicad_sym</uri>
     </library>
     <library logical="marbastlib-mx">
-      <uri>C:\Users\jaele\Desktop\4k-mania-keypad/marbastlib/marbastlib-mx.kicad_sym</uri>
+      <uri>/Users/entropy/Documents/coding/old/4k-mania-keypad/marbastlib/marbastlib-mx.kicad_sym</uri>
     </library>
     <library logical="marbastlib-various">
-      <uri>C:\Users\jaele\Desktop\4k-mania-keypad/marbastlib/marbastlib-various.kicad_sym</uri>
+      <uri>/Users/entropy/Documents/coding/old/4k-mania-keypad/marbastlib/marbastlib-various.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -1235,9 +1235,7 @@
     </net>
     <net code="34" name="Net-(D5-A)">
       <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="SW5" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="SW5" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="35" name="Net-(D5-K)">
       <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
@@ -1268,24 +1266,28 @@
       <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="SW6" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="42" name="Net-(U1-D+)">
+    <net code="42" name="Net-(J5-Pin_3)">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(U1-D+)">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="47" pinfunction="D+" pintype="bidirectional"/>
     </net>
-    <net code="43" name="Net-(U1-D-)">
+    <net code="44" name="Net-(U1-D-)">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U1" pin="46" pinfunction="D-" pintype="bidirectional"/>
     </net>
-    <net code="44" name="Net-(U1-XTAL_IN)">
+    <net code="45" name="Net-(U1-XTAL_IN)">
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="U1" pin="20" pinfunction="XTAL_IN" pintype="input"/>
       <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
     </net>
-    <net code="45" name="Net-(U1-XTAL_OUT)">
+    <net code="46" name="Net-(U1-XTAL_OUT)">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="XTAL_OUT" pintype="input"/>
     </net>
-    <net code="46" name="VCC">
+    <net code="47" name="VCC">
       <node ref="F1" pin="1" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS" pintype="passive"/>
       <node ref="J1" pin="A9" pinfunction="VBUS" pintype="passive"/>
@@ -1293,70 +1295,70 @@
       <node ref="J1" pin="B9" pinfunction="VBUS" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="VP" pintype="passive"/>
     </net>
-    <net code="47" name="unconnected-(J1-SBU1-PadA8)">
+    <net code="48" name="unconnected-(J1-SBU1-PadA8)">
       <node ref="J1" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="48" name="unconnected-(J1-SBU2-PadB8)">
+    <net code="49" name="unconnected-(J1-SBU2-PadB8)">
       <node ref="J1" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="49" name="unconnected-(U1-GPIO14-Pad17)">
+    <net code="50" name="unconnected-(U1-GPIO14-Pad17)">
       <node ref="U1" pin="17" pinfunction="GPIO14" pintype="input+no_connect"/>
     </net>
-    <net code="50" name="unconnected-(U1-GPIO15-Pad18)">
+    <net code="51" name="unconnected-(U1-GPIO15-Pad18)">
       <node ref="U1" pin="18" pinfunction="GPIO15" pintype="input+no_connect"/>
     </net>
-    <net code="51" name="unconnected-(U1-GPIO16-Pad27)">
+    <net code="52" name="unconnected-(U1-GPIO16-Pad27)">
       <node ref="U1" pin="27" pinfunction="GPIO16" pintype="input+no_connect"/>
     </net>
-    <net code="52" name="unconnected-(U1-GPIO17-Pad28)">
+    <net code="53" name="unconnected-(U1-GPIO17-Pad28)">
       <node ref="U1" pin="28" pinfunction="GPIO17" pintype="input+no_connect"/>
     </net>
-    <net code="53" name="unconnected-(U1-GPIO18-Pad29)">
+    <net code="54" name="unconnected-(U1-GPIO18-Pad29)">
       <node ref="U1" pin="29" pinfunction="GPIO18" pintype="input+no_connect"/>
     </net>
-    <net code="54" name="unconnected-(U1-GPIO19-Pad30)">
+    <net code="55" name="unconnected-(U1-GPIO19-Pad30)">
       <node ref="U1" pin="30" pinfunction="GPIO19" pintype="input+no_connect"/>
     </net>
-    <net code="55" name="unconnected-(U1-GPIO20-Pad31)">
+    <net code="56" name="unconnected-(U1-GPIO20-Pad31)">
       <node ref="U1" pin="31" pinfunction="GPIO20" pintype="input+no_connect"/>
     </net>
-    <net code="56" name="unconnected-(U1-GPIO21-Pad32)">
+    <net code="57" name="unconnected-(U1-GPIO21-Pad32)">
       <node ref="U1" pin="32" pinfunction="GPIO21" pintype="input+no_connect"/>
     </net>
-    <net code="57" name="unconnected-(U1-GPIO22-Pad34)">
+    <net code="58" name="unconnected-(U1-GPIO22-Pad34)">
       <node ref="U1" pin="34" pinfunction="GPIO22" pintype="input+no_connect"/>
     </net>
-    <net code="58" name="unconnected-(U1-GPIO23-Pad35)">
+    <net code="59" name="unconnected-(U1-GPIO23-Pad35)">
       <node ref="U1" pin="35" pinfunction="GPIO23" pintype="input+no_connect"/>
     </net>
-    <net code="59" name="unconnected-(U1-GPIO24-Pad36)">
+    <net code="60" name="unconnected-(U1-GPIO24-Pad36)">
       <node ref="U1" pin="36" pinfunction="GPIO24" pintype="input+no_connect"/>
     </net>
-    <net code="60" name="unconnected-(U1-GPIO25-Pad37)">
+    <net code="61" name="unconnected-(U1-GPIO25-Pad37)">
       <node ref="U1" pin="37" pinfunction="GPIO25" pintype="input+no_connect"/>
     </net>
-    <net code="61" name="unconnected-(U1-GPIO26{slash}ADC0-Pad38)">
+    <net code="62" name="unconnected-(U1-GPIO26{slash}ADC0-Pad38)">
       <node ref="U1" pin="38" pinfunction="GPIO26/ADC0" pintype="input+no_connect"/>
     </net>
-    <net code="62" name="unconnected-(U1-GPIO27{slash}ADC1-Pad39)">
+    <net code="63" name="unconnected-(U1-GPIO27{slash}ADC1-Pad39)">
       <node ref="U1" pin="39" pinfunction="GPIO27/ADC1" pintype="input+no_connect"/>
     </net>
-    <net code="63" name="unconnected-(U1-GPIO28{slash}ADC2-Pad40)">
+    <net code="64" name="unconnected-(U1-GPIO28{slash}ADC2-Pad40)">
       <node ref="U1" pin="40" pinfunction="GPIO28/ADC2" pintype="input+no_connect"/>
     </net>
-    <net code="64" name="unconnected-(U1-GPIO29{slash}ADC3-Pad41)">
+    <net code="65" name="unconnected-(U1-GPIO29{slash}ADC3-Pad41)">
       <node ref="U1" pin="41" pinfunction="GPIO29/ADC3" pintype="input+no_connect"/>
     </net>
-    <net code="65" name="unconnected-(U1-SWCLK-Pad24)">
+    <net code="66" name="unconnected-(U1-SWCLK-Pad24)">
       <node ref="U1" pin="24" pinfunction="SWCLK" pintype="input+no_connect"/>
     </net>
-    <net code="66" name="unconnected-(U1-SWDIO-Pad25)">
+    <net code="67" name="unconnected-(U1-SWDIO-Pad25)">
       <node ref="U1" pin="25" pinfunction="SWDIO" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="67" name="unconnected-(U2-IO1-Pad1)">
+    <net code="68" name="unconnected-(U2-IO1-Pad1)">
       <node ref="U2" pin="1" pinfunction="IO1" pintype="passive+no_connect"/>
     </net>
-    <net code="68" name="unconnected-(U2-IO4-Pad6)">
+    <net code="69" name="unconnected-(U2-IO4-Pad6)">
       <node ref="U2" pin="6" pinfunction="IO4" pintype="passive+no_connect"/>
     </net>
   </nets>

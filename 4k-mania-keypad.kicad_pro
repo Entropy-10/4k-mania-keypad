@@ -55,12 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "hole_near_hole|118630000|108080000|e7aad60e-c65b-4855-980e-589f8488e14e|f1e1fdbe-26fc-4808-816a-6d9778e8abdb",
-        "hole_near_hole|172000000|108000000|834291ae-efc3-4994-aadd-3226f586ef4e|f9348ff7-cc40-4a63-a95f-efb205410463",
-        "hole_near_hole|190920000|108000000|a0906d40-1002-4dcc-89db-2a033011caf6|d058c70b-6141-4571-a4b1-f963efc18f46",
-        "hole_near_hole|99630000|108080000|d7d40d31-f805-4faf-8db5-16979c05ed9b|2502175a-6e27-40ed-a562-2ef9ad34bfeb"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -514,6 +509,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
